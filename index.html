@@ -5,38 +5,9 @@
     <meta charset="utf-8">
     <title>Raju Maharjan | Human-Computer Interaction</title>
 
-    <link rel="canonical" href="https://rajumaharjan.com/index.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <meta name="theme-color" content="#fcfcfc">
+    <meta name="theme-color" content="#F55555">
 
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Raju Maharjan is a PhD student at the Technical University of Denmark with interest in HCI, health technology and conversational agents",
-        "datePublished": "2017-10-07T12:02:41Z",
-        "dateModified": "2021-07-26T12:03:41Z",
-        "description": "Raju Maharjan's profile",
-        "author": {
-          "@type": "Person",
-          "name": "Raju Maharjan"
-        },
-
-        "image": {
-            "url": "http://cdn.ampproject.org/raju.jpg",
-            "height":500,
-            "width":500
-        }
-      }
-    </script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    
-    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;600;800&family=Vidaloka&display=swap" rel="stylesheet">
 
     <style amp-custom>    
@@ -45,29 +16,31 @@
         
         /* variables */
         :root{            
-            --color-default: rgba(0,0,0,1);
-            
+            --color-default: rgba(0,0,0,1);            
             --color1: #FEC163;
             --color2: #F55555;
 
-            --text-shadow: 2px 15px 15px rgba(0,0,0,0.5);
+            --text-shadow: 2px 15px 35px rgba(0,0,0,0.5);
             --gredient: radial-gradient(circle 500px at center 8%, var(--color1), var(--color2));
-            --gredient-md: radial-gradient(circle 1500px at center 12%, var(--color1), var(--color2));
+            --gredient-md: radial-gradient(circle 800px at center 10%, var(--color1), var(--color2));
+            --text-gredient: radial-gradient(circle 200px at center 1%, #fff, #000);
+            --text-gredient-md: radial-gradient(circle 300px at center 1%, #fff, #000);
         }
 
 
         html, body{min-width: 100%; min-height: 100%; min-height: 100vh; font-family: 'Poppins', sans-serif; color: var(--color-default);;
-        font-size: 1rem; background: var(--gredient);}
+        font-size: 1rem; background: var(--gredient); }
         main{min-height: 100%; min-width: 100%; }
         h1{font-weight: 800; font-size: 3.5em;}
-        h2{ font-weight: 400; font-size: 1.4em;}
+        h2{ font-weight: 600; font-size: 1.4em;}
+        h3{ font-weight: 600; font-size: 1em;}
         p{ line-height: 1.9; margin: 1.5rem 0;}
         
         a{ color: inherit; text-decoration: none; transition: 0.3s;  }
+        img{ display: block; width: 100%; }
         .links a{border: none; line-height:1;}
 
         .navbar li a{ text-transform: uppercase;}
-        
         .highlight, a:hover{ color: var(--color-default); opacity: 1;}
         .muted{ opacity: 0.6;}
 
@@ -76,134 +49,49 @@
         ul.left-align{padding-left: 1.25rem;}
         ol li::before {content: counter(custom-counter) "."; margin-right: 0.75rem;}
         
-        
+        /* lightbulb */
+        .light{ position: absolute; height: 35%; top: 0; left: 50%; margin-left: -40px; width: 80px;} .bulb{ margin: 0 auto; position: absolute; width: 80px; height: 80px; border-radius: 50%; z-index: 2; background: #fff; box-shadow: 0 0 50px #ccc, 0 0 100px #fff, 0 0 150px #fff, 0 0 200px #fff, 0 0 250px #fff, 0 0 300px #fff, 0 0 350px #fff; } .bulb::before{ content: ''; position: absolute; top: -50px; left: 22.5px; width: 35px; height: 80px; background: #fff; border-top:30px solid #000 ; border-radius: 10px; } .bulb::after{ content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 120px; height: 120px; background: #fff; border-radius: 50%; filter: blur(70px); } .bulb span:nth-child(1){ position: absolute; top: -16px; left: -4px; display: block; width: 30px; height: 30px; background: transparent; transform: rotate(342deg); border-bottom-right-radius: 40px; box-shadow: 20px 20px 0 10px #fff; } .bulb span:nth-child(2){ position: absolute; top: -16px; right: -4px; display: block; width: 30px; height: 30px; background: transparent; transform: rotate(17deg); border-bottom-left-radius: 40px; box-shadow: -20px 20px 0 10px #fff; } .wire{ margin:0 auto; width: 3px; height: calc(100% - 100px); background: #000; z-index: 1; }
 
-        body{
-            /*
-            * https://cssgradient.io/gradient-backgrounds/
-            * Created with https://www.css-gradient.com
-            * Gradient link: https://www.css-gradient.com/?c1=feb792&c2=ea5555&gt=r&gd=dtt
-            */
-            background: radial-gradient(circle 500px at center 8%, #FEC163, #DE4313);
-        }
-        
+
         #about{ min-height: 100vh; margin-top: -75px;}
-        h1.huge{ font-size: 4em;}
+        h1.huge{ font-size: 4em; background-image: var(--text-gredient);background-size: 100%;background-repeat: repeat;-webkit-background-clip: text;-webkit-text-fill-color: transparent; -moz-background-clip: text;-moz-text-fill-color: transparent;}
         
-        #people img{ width: 200px; height: 200px; object-fit: cover; -webkit-filter: grayscale(100%); filter: grayscale(100%); margin: 0 auto; display: block; }
-        #people .profile{ background: white;}
+        .shadow{box-shadow: var(--text-shadow);}
+        .bg-white{ background: white;}
 
-        
+        #research img{ width: 100%; height:300px;  object-fit: cover; }
+        #people img{ width: 100%; height: 300px; object-fit: cover; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+
         @media only screen and (min-width: 52em){ /* breakpoint-md */
             body{background: var(--gredient-md)}
-            h1.huge{ font-size: 9em; text-shadow: var(--text-shadow)}   
+            h1.huge{ font-size: 9em; text-shadow: var(--text-shadow);background-image: var(--text-gredient-md);}   
             h2{ font-size: 1.6em;}   
+            #research img{ height:480px;}
         }
 
         @media only screen and (min-width: 64em){ /* breakpoint-lg */
             html, body{ font-size: 1.1em;}
             h1{ font-size: 5em;}   
             h1.huge{ font-size: 10.5em;}   
-            h2{ font-size: 1.8em;}   
-            
+            h2{ font-size: 1.8em;}               
             /* h1.sticky{overflow: hidden; z-index: 2; top:0rem;} 
-            h2.sticky{overflow: hidden; z-index: 1; top:5.5rem;}  */
-            
+            h2.sticky{overflow: hidden; z-index: 1; top:5.5rem;}  */            
         }
-
-
-        .light{ position: absolute; height: 35%; top: 0; left: 50%; margin-left: -40px; width: 80px;}
-
-        .bulb{    
-            margin: 0 auto;    
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            z-index: 2;
-            background: #fff;
-            box-shadow: 0 0 50px #ccc,
-            0 0 100px #fff,
-            0 0 150px #fff,
-            0 0 200px #fff,
-            0 0 250px #fff,
-            0 0 300px #fff,
-            0 0 350px #fff;
-            }
-
-        .bulb::before{
-            content: '';
-            position: absolute;
-            top: -50px;
-            left: 22.5px;
-            width: 35px;
-            height: 80px;
-            background: #fff;
-            border-top:30px solid #000 ;
-            border-radius: 10px;
-        }
-
-        .bulb::after{
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 120px;
-        height: 120px;
-        background: #fff;
-        border-radius: 50%;
-        filter: blur(70px);
-        }
-
-        .bulb span:nth-child(1){
-            position: absolute;
-            top: -16px;
-            left: -4px;
-            display: block;
-            width: 30px;
-            height: 30px;
-            background: transparent;
-            transform: rotate(342deg);
-            border-bottom-right-radius: 40px;
-            box-shadow: 20px 20px 0 10px #fff;
-        }
-
-
-        .bulb span:nth-child(2){
-            position: absolute;
-            top: -16px;
-            right: -4px;
-            display: block;
-            width: 30px;
-            height: 30px;
-            background: transparent;
-            transform: rotate(17deg);
-            border-bottom-left-radius: 40px;
-            box-shadow: -20px 20px 0 10px #fff;
-        }
-
-        .wire{
-            margin:0 auto;
-            width: 3px;
-            height: calc(100% - 100px);
-            background: #000;
-            z-index: 1;
-        }
-
-
 
     </style>
 
 
 </head>
 
+
+
+
+
 <body>
 
 
     <main>        
-        
-        
+                
         <nav class="navbar clearfix px3 relative z4">
             <div class="max-width-4 mx-auto flex items-center" >
                 <div class="navbar-brand flex-auto">
@@ -235,7 +123,9 @@
                     </div>
                     
                     <div class="pt4 relative z4">
-                        <div class="py4 md-hide lg-hide"></div>
+                        
+                        <div class="py3 md-hide lg-hide"></div>
+
                         <h1 class="m0 p0 huge pt4">OURHCID</h1>
                         <h2 class="m0 p0 ">OU Research for Human-Computer Interaction Design</h2>
                     </div>
@@ -255,33 +145,39 @@
 
             <div class="max-width-4 mx-auto px3 py4">
                 
-                <h1 class="my2 py2"> Research </h1>
-                <p>As an interdisciplinary group, researchers in this lab engage in a variety of design research related to generative AI, wellbeing technology, conversational AI, and more.</p>
-                
-                <div class="clearfix mxn3 py4">
-                        
-                    <div class="md-col md-col-6 px3">
-                        <img src="" alt="">
-                    </div>    
-                    <div class="md-col md-col-6 px3">
-                        
-                        <h2 class="m0">Generative AI and Design Education</h2>                        
-                    </div>
-
+                <div class="intro">
+                    <h1 class="my2 py2"> Research </h1>
+                    <p>As an interdisciplinary group, researchers in this lab engage in a variety of design research related to generative AI, wellbeing technology, conversational AI, and more.</p>
                 </div>
 
-                <div class="clearfix mxn3 py4">
-                    
-                    <div class="md-col md-col-6 px3">
-                        <h2 class="m0">Conversational Agents for Mental Health & Wellbeing</h2>
+                <div class="py3">
+                    <div class="clearfix bg-white shadow rounded">
+                        <div class="md-col md-col-5">                        
+                             <img class="block mx-auto" src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/E5A7NARDRRJA7CF7GYRCI4EZSQ.jpg"/>
+                        </div>    
+                        <div class="md-col md-col-7 p4"> 
+                            <h2 class="mt0">Generative AI & Design Education</h2>                        
+                            <p class="m0">This project aims to develop a sustainable pedagogical framework that incorporates Generative AI into design education, with the goal of preparing a new generation of designers with expertise in harnessing the creative potential of this technology.</p>
+                        </div>
                     </div>
-                    <div class="md-col md-col-6 px3">
-                        <img src="" alt="">
-                    </div>    
-
                 </div>
 
-                
+                <div class="py3">
+                    <div class="clearfix bg-white shadow rounded">
+                        <div class="md-col md-col-5">                        
+                            <img class="block mx-auto" src="https://images.unsplash.com/photo-1512446816042-444d641267d4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        </div>    
+                        <div class="md-col md-col-7 p4 flex flex-center">
+                            <div class="clearfix">
+                            <h2 class="mt0">Conversational Agents for Mental Health & Wellbeing</h2>                        
+                            <p class="m0">
+                                This project aims to design, develop, and evaluate a voice-based conversational agent to support the wellbeing of individuals living with affective disorders.
+                            </p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
                 
             </div>
             
@@ -291,35 +187,43 @@
         <section id="people">
             <div class="max-width-4 mx-auto px3 py4">
                 
-                <h1 class="my2 py2"> People </h1>
+                <div class="intro">
+                    <h1 class="my2 py2"> People </h1>
+                </div>
                
-                <div class="clearfix mxn2 py4">
+                <div class="clearfix mxn2 py3">
                         
-                    <div class="md-col md-col-4 px2 my3">
-                        <img class="circle" src="https://rajumaharjan.com/wp-content/uploads/2023/01/raju.jpg"/>
-                        <div class="profile rounded p3">
-                            <h3 class="m0">Raju Maharjan</h3>
-                            <p>some text</p>
-                        </div>
+                    <div class=" md-col md-col-6 lg-col-4 px2 my3">
+                        <div class="bg-white shadow">                            
+                            <img class="block mx-auto" src="https://rajumaharjan.com/wp-content/uploads/2023/01/raju.jpg"/>
+                            <div class="p3">
+                                <h3 class="m0">Raju Maharjan, Phd</h3>
+                                <p class="m0">School of Visual Arts</p>
+                            </div>
+                        </div>    
                     </div>    
 
-                    <div class=" md-col md-col-4 px2 my3">
-                        <img class="circle mr-auto" src="https://www.ou.edu/finearts/visual-arts/about/faculty-staff/visual-communications-faculty/_jcr_content/contentpar/textimage_1975405447/image.img.jpg/1666122656695.jpg"/>                            
-                        <div class="profile rounded p3">
-                            <h3 class="m0">Sang Ryu</h3>
-                            <p>some text</p>
-                        </div>
+                    <div class=" md-col md-col-6 lg-col-4 px2 my3">
+                        <div class="bg-white shadow">                            
+                            <img class="block mx-auto" src="https://www.ou.edu/finearts/visual-arts/about/faculty-staff/visual-communications-faculty/_jcr_content/contentpar/textimage_1975405447/image.img.jpg/1666122656695.jpg"/>
+                            <div class="p3">
+                                <h3 class="m0">Sang Ryu, Phd</h3>
+                                <p class="m0">School of Visual Arts</p>
+                            </div>
+                        </div>    
                     </div>    
-
                     
-                    <div class=" md-col md-col-4 px2 my3">
-                        <img class="circle mr-auto" src="test.jpg"/>                            
-                        <div class="profile rounded p3">
-                            <h3 class="m0">Join OURHCID</h3>
-                            <p>some text</p>
-                        </div>
-                    </div>     
-
+                    <div class=" md-col md-col-6 lg-col-4 px2 my3">
+                        <div class="bg-white shadow">                            
+                            <img class="block mx-auto" src="https://static-00.iconduck.com/assets.00/avatar-default-symbolic-icon-512x488-rddkk3u9.png"/>
+                            <div class="p3">
+                                <h3 class="m0">Join OURHCID Lab</h3>
+                                <p class="m0">Lets collaborate</p>
+                            </div>
+                        </div>    
+                    </div>    
+                    
+                
                 </div>
 
             </div>    
