@@ -21,8 +21,8 @@
             --color1: #FEC163;
             --color2: #F55555;
 
-            --color1: #5efce8;
-            --color2: #00defb;
+            --color1: #ffffff;
+            --color2: #cccccc;
 
             --text-shadow: 2px 15px 35px rgba(0,0,0,0.5);
             --gredient: radial-gradient(circle 500px at center 8%, var(--color1), var(--color2));
@@ -45,10 +45,6 @@
         img{ display: block; width: 100%; }
         
 
-        .navbar li a{ text-transform: uppercase;}
-        a:hover, a:active { color: var(--color1); opacity: 1;}
-        .muted{ opacity: 0.6;}
-
         ol {list-style: none; counter-reset: custom-counter;}
         ol li {counter-increment: custom-counter;  display: flex;}
         ul.left-align{padding-left: 1.25rem;}
@@ -56,7 +52,10 @@
         
         .sticky{ position: sticky; top: 00px;}
 
-        .navbar{background-color:black; color: #fff;}
+        .navbar{background: rgba(255, 255, 255, 0);backdrop-filter: blur(20px);}
+        .navbar li a{ text-transform: uppercase;  border-radius: 20px;}
+        .navbar li a:hover, .navbar li a:active{background: rgba(255, 255, 255, 0.5)}
+        
         
 
         /* lightbulb */
@@ -105,17 +104,17 @@
         <nav class="navbar clearfix px3 relative z4 sticky">
             <div class="max-width-4 mx-auto flex items-center" >
                 <div class="navbar-brand flex-auto">
-                    <a class="h2 block py2" href="">OURHCID Lab</a>
+                    <a class="h2 block py2" href="">OURCHID Lab</a>
                 </div>
                 <div class="nav-container">
                     
                     <!-- <a class="h2 block p2 md-hide lg-hide" href="">+</a> -->
 
-                    <ul class="navbar-nav list-reset m0 py2 mxn2">
-                        <li class="inline-block m0 mx2 "><a class="py1 block" href="#about"><span class="xs-hide sm-hide">About</span></a></li>
-                        <li class="inline-block m0 mx2 "><a class="py1 block" href="#research"><span class="xs-hide sm-hide">Research</span></a></li>
-                        <li class="inline-block m0 mx2 "><a class="py1 block" href="#people"><span class="xs-hide sm-hide">People</span> </a></li>
-                        <li class="inline-block m0 mx2 "><a class="py1 block" href="#contact"><span class="xs-hide sm-hide">Contact</span> </a></li>
+                    <ul class="navbar-nav list-reset m0 py2 mxn2 xs-hide sm-hide">
+                        <li class="inline-block m0 mx1"><a class="p1 px2 block" href="#about"><span class="">About</span></a></li>
+                        <li class="inline-block m0 mx1"><a class="p1 px2 block" href="#research"><span class="">Research</span></a></li>
+                        <li class="inline-block m0 mx1"><a class="p1 px2 block" href="#people"><span class="">People</span> </a></li>
+                        <li class="inline-block m0 mx1"><a class="p1 px2 block" href="#contact"><span class="">Contact</span> </a></li>
                     </ul>   
 
                 </div>
@@ -128,7 +127,7 @@
                 
                 <header class="pt4">
 
-                    <div class="light z1">
+                    <div class="light z4">
                         <div class="wire"></div>
                         <div class="bulb">
                             <span></span>
@@ -140,9 +139,8 @@
                         
                         <div class="py3 md-hide lg-hide"></div>
 
-                        <h1 class="m0 p0 huge pt4">OURHCID</h1>
-                        <h3 class="m0 block">Pronounced as: Orchid </h3>
-                        <h2 class=" p0 ">OU Research for Human-Computer Interaction Design</h2>
+                        <h1 class="m0 p0 huge pt4">OURCHID</h1>
+                        <h2 class=" p0 ">OU Research for Computer-Human Interaction Design</h2>
                     </div>
 
                 </header>    
@@ -269,7 +267,7 @@
 
         <footer class="py4 inverse center">
             
-            <p class="">&copy; OURHCID</p>
+            <p class="">&copy; OURCHID</p>
             
         </footer>
 
