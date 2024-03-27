@@ -17,25 +17,25 @@
         
         /* variables */
         :root{            
-            --color-default: rgba(0,0,0,1);            
-            --color1: #FEC163;
-            --color2: #F55555;
+                        
+            --color-primary: #ff5317;
+            --color-secondary: #ffdece;
 
-            --color1: #ffffff;
-            --color2: #cccccc;
+            --color-primary:#22006f;
+            --color-secondary: #daf7ee;
 
             --text-shadow: 2px 15px 35px rgba(0,0,0,0.5);
-            --gredient: radial-gradient(circle 500px at center 8%, var(--color1), var(--color2));
-            --gredient-md: radial-gradient(circle 800px at center 10%, var(--color1), var(--color2));
-            --text-gredient: radial-gradient(circle 200px at center 1%, #fff, #000);
-            --text-gredient-md: radial-gradient(circle 300px at center 1%, #fff, #000);
+            --gredient: radial-gradient(circle 500px at center 8%, #fff, var(--color-secondary));
+            --gredient-md: radial-gradient(circle 800px at center 10%, #fff, var(--color-secondary));
+            --text-gredient: radial-gradient(circle 200px at center 1%, #fff, var(--color-primary));
+            --text-gredient-md: radial-gradient(circle 300px at center 1%, #fff, var(--color-primary));
         }
 
 
-        html, body{min-width: 100%; min-height: 100%; min-height: 100vh; font-family: 'Poppins', sans-serif; color: var(--color-default);
+        html, body{min-width: 100%; min-height: 100%; min-height: 100vh; font-family: 'Poppins', sans-serif; color: var(--color-primary);
         font-size: 1rem; background: var(--gredient); }
         main{min-height: 100%; min-width: 100%; }
-        h1{font-weight: 800; font-size: 3.5em;}
+        h1{font-weight: 600; font-size: 3.5em;}
         h2{ font-weight: 600; font-size: 1.4em;}
         h3{ font-weight: 600; font-size: 1em;}
         p{ line-height: 1.9; margin: 1.5rem 0;}
@@ -66,16 +66,25 @@
         h1.huge{ font-size: 4em; background-image: var(--text-gredient);background-size: 100%;background-repeat: repeat;-webkit-background-clip: text;-webkit-text-fill-color: transparent; -moz-background-clip: text;-moz-text-fill-color: transparent;}
         
         .shadow{box-shadow: var(--text-shadow);}
-        .bg-white{ background: white;}
+        .bg-default{ color: var(--color-primary); background:#fff}
+        .bg-inverse{ color: var(--color-secondary); background: var(--color-primary); }
 
-        #research img{ width: 100%; height:300px;  object-fit: cover; }
-        #people img, #people span{ width: 100%; height: 300px; object-fit: cover; -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+        #research img{ width: 100%; height: 100%;  object-fit: cover; }
+        
+        
+
+        .profile figure{ background-color: var(--color-primary);}
+        .profile img{ width: 100%; height: auto; 
+            /* object-fit: cover;  */
+            -webkit-filter: grayscale(100%); filter: grayscale(100%); 
+            opacity: 0.9;
+        }
 
         @media only screen and (min-width: 52em){ /* breakpoint-md */
             body{background: var(--gredient-md)}
-            h1.huge{ font-size: 9em; text-shadow: var(--text-shadow);background-image: var(--text-gredient-md);}   
+            h1.huge{ font-size: 9em; font-weight: 800; text-shadow: var(--text-shadow);background-image: var(--text-gredient-md);}   
             h2{ font-size: 1.6em;}   
-            #research img{ height:480px;}
+            #research img{ height:100%; width: 100%; object-fit: cover;}
         }
 
         @media only screen and (min-width: 64em){ /* breakpoint-lg */
@@ -155,6 +164,10 @@
 
         <section id="research">
 
+
+
+
+
             <div class="max-width-4 mx-auto px3 py4">
                 
                 <div class="intro">
@@ -162,12 +175,14 @@
                     <p>As an interdisciplinary group, researchers in this lab engage in a variety of design research related to generative AI, wellbeing technology, conversational AI, and more.</p>
                 </div>
 
+
+<!-- 
                 <div class="py3">
-                    <div class="clearfix bg-white shadow lg-flex items-center">
-                        <div class="md-col md-col-5">                        
+                    <div class="clearfix bg-default shadow lg-flex items-center">
+                        <div class="md-col md-col-6 flex">                        
                              <img class="block mx-auto" src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/E5A7NARDRRJA7CF7GYRCI4EZSQ.jpg">
                         </div>    
-                        <div class="md-col md-col-7 p4"> 
+                        <div class="md-col md-col-6 p4"> 
                             
                             <h2 class="mt0">Generative AI & Design Education</h2>                        
                             <p class="m0">This project aims to develop a sustainable pedagogical framework that incorporates Generative AI into design education, with the goal of preparing a new generation of designers with expertise in harnessing the creative potential of this technology.</p>
@@ -177,18 +192,67 @@
                 </div>
 
                 <div class="py3">
-                    <div class="clearfix bg-white shadow lg-flex items-center">
-                        <div class="md-col md-col-5">                        
-                            <img class="block mx-auto" src="https://images.unsplash.com/photo-1512446816042-444d641267d4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                        </div>    
-                        <div class="md-col md-col-7 p4">
+                    <div class="clearfix bg-default shadow lg-flex items-center">
+                        <div class="md-col md-col-6 p4">
                             
                             <h2 class="mt0">Conversational Agents for Mental Health & Wellbeing</h2>                        
                             <p class="m0">This project aims to design, develop, and evaluate a voice-based conversational agent to support the wellbeing of individuals living with affective disorders.</p>
                             
                         </div>
+                        <div class="md-col md-col-6">                        
+                            <img class="block mx-auto" src="https://images.unsplash.com/photo-1512446816042-444d641267d4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                        </div>    
                     </div>
-                </div>
+                </div> -->
+
+
+
+                    <div class="py3">
+
+                    
+                        <div class="bg-default shadow">
+                            <div class="lg-flex">
+                                <div class="lg-col-6 flex border-box">
+                                    <div class="col-12">
+                                        <img class="block mx-auto"
+                                            src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/E5A7NARDRRJA7CF7GYRCI4EZSQ.jpg">
+                                    </div>
+                                </div>
+                                <div class="lg-col-6 border-box ">
+                                    <div class="p4">
+                                        <h2 class="mt0">Generative AI & Design Education</h2>
+                                        <p class="m0">This project aims to develop a sustainable pedagogical framework that incorporates
+                                            Generative AI into design education, with the goal of preparing a new generation of designers with
+                                            expertise in harnessing the creative potential of this technology.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="py3">
+
+                    
+                        <div class="bg-default shadow">
+                            <div class="lg-flex">
+                                <div class="lg-col-6 flex border-box">
+                                    <div class="col-12">
+                                        <img class="block mx-auto" src="https://images.unsplash.com/photo-1512446816042-444d641267d4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                    </div>
+                                </div>
+                                <div class="lg-col-6 border-box ">
+                                    <div class="p4">
+                                        <h2 class="mt0">Conversational Agents for Mental Health & Wellbeing</h2>                        
+                                        <p class="m0">This project aims to design, develop, and evaluate a voice-based conversational agent to support the wellbeing of individuals living with affective disorders.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>    
+
 
                 
             </div>
@@ -206,9 +270,11 @@
                 <div class="clearfix mxn2 py3">
                         
                     <div class=" md-col md-col-6 lg-col-4 px2 my3">
-                        <div class="bg-white shadow">                            
-                            <img class="block mx-auto" src="https://rajumaharjan.com/wp-content/uploads/2023/01/raju.jpg">
-                            <div class="p3">
+                        <div class="profile bg-default shadow p3">                            
+                            <figure class="m0 m2 circle">                           
+                                <img class="mx-auto circle" src="https://rajumaharjan.com/wp-content/uploads/2023/01/raju.jpg">
+                            </figure>
+                            <div class="pt3 center">
                                 <h3 class="m0"><a href="https://www.rajumaharjan.com">Raju Maharjan, Phd</a></h3>
                                 <p class="m0">School of Visual Arts</p>
                             </div>
@@ -216,9 +282,11 @@
                     </div>    
 
                     <div class="md-col md-col-6 lg-col-4 px2 my3">
-                        <div class="bg-white shadow">                            
-                            <img class="block mx-auto" src="img/sang_ryu.jpg">
-                            <div class="p3">
+                        <div class="profile bg-default shadow p3"> 
+                            <figure class="m0 m2 circle">
+                                <img class="mx-auto circle" src="img/sang_ryu.jpg">
+                            </figure>                           
+                            <div class="pt3 center">
                                 <h3 class="m0"><a href="https://htmlpreview.github.io/?https://github.com/maharrx/OURCHID/blob/main/index.html">Sang Ryu, Phd</a></h3>
                                 <p class="m0">School of Visual Arts</p>
                             </div>
@@ -226,9 +294,11 @@
                     </div>    
                     
                     <div class=" md-col md-col-6 lg-col-4 px2 my3">
-                        <div class="bg-white shadow">                            
-                            <img class="block mx-auto" src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg">
-                            <div class="p3">
+                        <div class="profile bg-default shadow p3">                            
+                            <figure class="m0 m2 circle">
+                                <img class="mx-auto circle" src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg">
+                            </figure>
+                            <div class="pt3 center">
                                 <a href="#contact">
                                     <h3 class="m0">Join the Lab</h3>
                                     <p class="m0">Let's collaborate!</p>
